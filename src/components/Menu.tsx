@@ -11,7 +11,7 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
+import { archiveOutline, archiveSharp, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -19,6 +19,10 @@ interface AppPage {
   iosIcon: string;
   mdIcon: string;
   title: string;
+}
+
+interface ContainerProps {
+  setLogeado: (value: React.SetStateAction<boolean>) => void
 }
 
 const appPages: AppPage[] = [
@@ -60,15 +64,19 @@ const appPages: AppPage[] = [
   }
 ];
 
-const labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-
-const Menu: React.FC = () => {
+const Menu: React.FC<ContainerProps> = ({setLogeado}) => {
+  
   const location = useLocation();
+
+  const deslogearse = () => {
+    setLogeado(false);
+    
+  }
 
   return (
     <IonMenu contentId="main" type="overlay">
       <IonContent>
-        <IonList id="inbox-list">
+        <IonList id="inbox-list" class='mb-1'>
           <IonListHeader>Inbox</IonListHeader>
           <IonNote>hi@ionicframework.com</IonNote>
           {appPages.map((appPage, index) => {
@@ -83,18 +91,13 @@ const Menu: React.FC = () => {
           })}
         </IonList>
 
-        <IonList id="labels-list">
-          <IonListHeader>Labels</IonListHeader>
-          {labels.map((label, index) => (
-            <IonItem lines="none" key={index}>
-              <IonIcon slot="start" icon={bookmarkOutline} />
-              <IonLabel>{label}</IonLabel>
-            </IonItem>
-          ))}
-        </IonList>
+        <input className='boton' type="submit" value={'Cerrar Sesion'} onClick={deslogearse}/>
       </IonContent>
+
     </IonMenu>
   );
 };
-
+interface ContainerProps {
+  setLogeado: (value: React.SetStateAction<boolean>) => void
+}
 export default Menu;
