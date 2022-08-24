@@ -36,6 +36,8 @@
     padding: .5rem;
     color: #ffff;
     border-radius: .5rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .boton:hover{

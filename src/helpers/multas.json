@@ -1,0 +1,36 @@
+[
+    {
+        "id" : 1,
+        "cedula" : "075-4109471-6",
+        "placa" : "046846540",
+        "motivo" : "Exceso de velocidad",
+        "foto" : "/../img/multados.svg",
+        "latitud" : "1.000.51",
+        "longitud" : "1.000.51",
+        "fecha" : "8/24/2022",
+        "hora" : "5:00 pm"
+    },
+    {
+        "id" : 2,
+        "cedula" : "075-4109471-6",
+        "placa" : "046846540",
+        "motivo" : "Exceso de velocidad",
+        "foto" : "../img/usuario.svg",
+        "latitud" : "1.000.51",
+        "longitud" : "1.000.51",
+        "fecha" : "8/24/2022",
+        "hora" : "5:00 pm"
+    },
+    {
+        "id" : 3,
+        "cedula" : "075-4109471-6",
+        "placa" : "046846540",
+        "motivo" : "Exceso de velocidad",
+        "foto" : "../img/usuario.svg",
+        "latitud" : "1.000.51",
+        "longitud" : "1.000.51",
+        "fecha" : "8/24/2022",
+        "hora" : "5:00 pm"
+    }
+
+]

@@ -1,0 +1,67 @@
+.multa {
+    margin-top: 4rem;
+    margin: 4rem auto;
+    width: 90%;
+    border-spacing: 0;
+    display: table;
+    overflow: auto;
+}
+
+thead {
+    background-color: var(--ion-color-primary);
+    width: 100%;
+}
+
+thead th {
+    color: #fff;
+    padding: .6rem;
+}
+
+tbody td {
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: .5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #6b7280;
+}
+
+.titulo {
+    text-transform: uppercase;
+
+    color: #424242;
+}
+
+
+.multaEspecifica .carta {
+    max-width: 23rem;
+    margin: 0 auto;
+    padding: 0 0 2rem 0;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px 0px #a7a7a7;
+}
+
+
+.multaEspecifica img {
+    border-radius: .5rem .5rem 0% 0%;
+}
+
+
+.multaEspecifica .boton {
+    width: auto;
+    font-weight: bold;
+    padding: .8rem 1rem;
+}
+
+.contenidoCarta p {
+    color: #424242;
+    margin: 1rem;
+    text-align: justify;
+}
+
+.subtitulo {
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: .5rem;
+}
