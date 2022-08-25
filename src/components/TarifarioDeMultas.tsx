@@ -56,7 +56,7 @@ const TarifarioDeMultas = () => {
         <div className="multaEspecifica">
           <div className="carta">
             <img
-              src="https://diariolibre.blob.core.windows.net.optimalcdn.com/images/2022/01/19/accidente-011664716020210618195411-1ab92042.jpeg"
+              src={laMulta?.foto}
               alt="imagen_del_la_multa"
             />
 
