@@ -63,6 +63,10 @@ const App: React.FC = () => {
                   <AplicarMultaPage />
                 </Route>
 
+                <Route path="/page/Registro-de-multa" exact={true}>
+                  <TarifarioDeMultasPage />
+                </Route>
+
                 <Route path="/" exact={true}>
                   <TarifarioDeMultasPage />
                 </Route>
