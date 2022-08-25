@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const TarifarioDeMultas = () => {
   const [estado, setEstado] = useState(true);
-  const [multaId, setMultaId] = useState(0);
+  const [multaId, setMultaId] = useState("");
 
   const mostrarUnaMultaEspecifica = (id: any) => {
     setMultaId(id);

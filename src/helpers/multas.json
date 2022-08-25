@@ -1,6 +1,6 @@
 [
     {
-        "id" : 1,
+        "id" : "1",
         "cedula" : "075-4109471-6",
         "placa" : "046846540",
         "motivo" : "Exceso de velocidad",
@@ -11,7 +11,7 @@
         "hora" : "5:00 pm"
     },
     {
-        "id" : 2,
+        "id" : "2",
         "cedula" : "075-4109471-6",
         "placa" : "046846540",
         "motivo" : "Exceso de velocidad",
@@ -22,7 +22,7 @@
         "hora" : "5:00 pm"
     },
     {
-        "id" : 3,
+        "id" : "3",
         "cedula" : "075-4109471-6",
         "placa" : "046846540",
         "motivo" : "Exceso de velocidad",

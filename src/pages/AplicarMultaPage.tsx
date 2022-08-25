@@ -1,33 +1,30 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import { useParams } from 'react-router';
-import ExploreContainer from '../components/ExploreContainer';
+import AplicarMulta from '../components/AplicarMulta';
 import './Page.css';
 
-const Page: React.FC = () => {
-
-  const { name } = useParams<{ name: string; }>();
+const AplicarMultaPage: React.FC = () => {
 
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar class=''>
+        <IonToolbar>
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>{name}</IonTitle>
+          <IonTitle>Aplicar Multa</IonTitle>
         </IonToolbar>
       </IonHeader>
 
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">{name}</IonTitle>
+            <IonTitle size="large">Aplicar Multa</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name={name} />
+        <AplicarMulta/>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Page;
+export default AplicarMultaPage;

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./ExploreContainer.css";
 import "./Login.css";
+import { v4 as uuidv4 } from "uuid";
 // import './Page.css';
 
 interface ContainerProps {
@@ -88,5 +89,7 @@ const Login: React.FC<ContainerProps> = ({setLogeado}) => {
     </div>
   );
 };
+console.log(uuidv4());
+
 
 export default Login;

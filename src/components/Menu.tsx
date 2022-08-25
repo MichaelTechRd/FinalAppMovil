@@ -12,8 +12,6 @@ import {
 
 import { useLocation } from "react-router-dom";
 import {
-  trashOutline,
-  trashSharp,
   warningOutline,
   warningSharp,
   car,
@@ -23,6 +21,7 @@ import {
   earth,
   cash,
   speedometer,
+  apps,
 } from "ionicons/icons";
 import "./Menu.css";
 
@@ -65,8 +64,8 @@ const appPages: AppPage[] = [
   {
     title: "Multas registradas",
     url: "/page/Trash",
-    iosIcon: trashOutline,
-    mdIcon: trashSharp,
+    iosIcon: apps,
+    mdIcon: apps,
   },
   {
     title: "Mapa de multas",
