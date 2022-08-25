@@ -3,8 +3,9 @@
     margin: 4rem auto;
     width: 90%;
     border-spacing: 0;
-    display: table;
+    display: block;
     overflow: auto;
+    height: 18rem;
 }
 
 thead {

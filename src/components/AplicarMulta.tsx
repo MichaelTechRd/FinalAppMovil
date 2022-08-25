@@ -4,8 +4,7 @@ import "./Login.css";
 import "./AplicarMulta.css";
 import Multas from "../helpers/multas.json";
 import { useState } from "react";
-// import { v4 as uuid } from "uuid";
-import uuid from "react-uuid";
+import { v4 as uuid } from "uuid";
 
 const AplicarMulta = () => {
   const [multas, setAllMultas] = useState(Multas);
@@ -27,6 +26,8 @@ const AplicarMulta = () => {
       ...multa,
       [e.target.name]: e.target.value,
     });
+
+    // console.log(multa);
   };
 
   const { cedula, placa, motivo, foto, latitud, longitud, fecha, hora } = multa;
@@ -50,8 +51,26 @@ const AplicarMulta = () => {
       }, 3500);
       return;
     }
+
+    multa.id = uuid();
+
     setAllMultas([...multas, multa]);
+
+    setMulta({
+      id: "",
+      cedula: "",
+      placa: "",
+      motivo: "",
+      foto: "",
+      latitud: "",
+      longitud: "",
+      fecha: "",
+      hora: "",
+    })
   };
+
+  //   console.log(multa);
+    console.log(multas);
 
   return (
     <div className="container">
@@ -72,6 +91,7 @@ const AplicarMulta = () => {
                 name="cedula"
                 id="cedula"
                 placeholder="Tu cedula"
+                value={cedula}
               />
             </div>
 
@@ -83,6 +103,7 @@ const AplicarMulta = () => {
                 name="placa"
                 id="placa"
                 placeholder="Tu placa"
+                value={placa}
               />
             </div>
 
@@ -94,6 +115,7 @@ const AplicarMulta = () => {
                 name="motivo"
                 id="motivo"
                 placeholder="Motivos de la multa"
+                value={motivo}
               />
             </div>
 
@@ -105,6 +127,7 @@ const AplicarMulta = () => {
                 name="foto"
                 id="foto"
                 placeholder="Foto del suceso"
+                value={foto}
               />
             </div>
 
@@ -116,6 +139,7 @@ const AplicarMulta = () => {
                 name="latitud"
                 id="latitud"
                 placeholder="Latitud del lugar"
+                value={latitud}
               />
             </div>
 
@@ -127,6 +151,7 @@ const AplicarMulta = () => {
                 placeholder="Longitud del lugar"
                 name="longitud"
                 id="longitud"
+                value={longitud}
               />
             </div>
 
@@ -138,6 +163,7 @@ const AplicarMulta = () => {
                 name="fecha"
                 placeholder="Fecha de la multa"
                 id="fecha"
+                value={fecha}
               />
             </div>
 
@@ -149,6 +175,7 @@ const AplicarMulta = () => {
                 name="hora"
                 placeholder="Hora de la multa"
                 id="hora"
+                value={hora}
               />
             </div>
           </div>
@@ -165,6 +192,7 @@ const AplicarMulta = () => {
       <table className="multa">
         <thead>
           <tr>
+            <th>ID</th>
             <th>Cedula</th>
             <th>Placa del vehiculo</th>
             <th>motivo de la multa</th>
@@ -173,9 +201,10 @@ const AplicarMulta = () => {
         </thead>
         <tbody className="">
           {multas.map((multa) => (
-            <tr key={uuid()}>
+            <tr key={multa.id}>
+              <td>{multa.id}</td>
               <td>{multa.cedula}</td>
-              <td>{multa.placa}</td>
+              <td>{multa.cedula}</td>
               <td>{multa.motivo}</td>
               <td>{multa.hora}</td>
             </tr>
