@@ -74,7 +74,7 @@ const AplicarMulta = () => {
 
   return (
     <div className="container">
-      <h1 className="titulo">agregar una multa</h1>
+      <h1 className="tituloAplicar">agregar una multa</h1>
 
       <div className="">
         <form action="" className="formulario-crear">

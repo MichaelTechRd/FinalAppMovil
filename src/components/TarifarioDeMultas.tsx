@@ -25,7 +25,7 @@ const TarifarioDeMultas = () => {
       <h1 className="titulo">Tarifario de las multas</h1>
 
       {estado ? (
-        <table className="multa">
+          <table className="multas">
             <thead>
               <tr>
                 <th>ID</th>
@@ -51,8 +51,7 @@ const TarifarioDeMultas = () => {
                 </tr>
               ))}
             </tbody>
-   
-        </table>
+          </table>
       ) : (
         <div className="multaEspecifica">
           <div className="carta">

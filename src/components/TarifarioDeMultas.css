@@ -5,11 +5,19 @@
     border-spacing: 0;
     display: block;
     overflow: auto;
-    height: 20rem;
-    
-    
-
+    height: 20rem; 
 }
+
+.multas{
+    margin-top: 4rem;
+    margin: 4rem auto;
+    width: 90%;
+    border-spacing: 0;
+    display: table;
+    overflow: auto;
+    height: 20rem; 
+}
+
 
 thead {
     background-color: var(--ion-color-primary);
@@ -38,40 +46,61 @@ tbody td {
 
 }
 
+.tituloAplicar{
+    text-transform: uppercase;
+    color: #424242;
+    margin-bottom: .5rem;  
+}
+
 @media (min-width: 768px)   {
-    .titulo{
+    .tituloAplicar{
         margin-top: 20rem;
     }
     
 }
 
 @media (min-width: 360px)   {
-    .titulo{
+    .tituloAplicar{
         margin-top: 20rem;
     }
 }
 
 
 @media (min-width: 375px)   {
-    .titulo{
+    .tituloAplicar{
         margin-top: 27rem;
     }
 }
 
 @media (min-width: 390px)   {
-    .titulo{
+    .tituloAplicar{
         margin-top: 17rem;
     }
 }
 
 
 @media (min-width: 414px)   {
-    .titulo{
+    .tituloAplicar{
         margin-top: 15rem;
 
     }
     
 }
+
+@media (min-width: 820px)   {
+    .tituloAplicar{
+        margin-top: 0rem;
+    }
+    
+}
+
+@media (min-width: 820px)   {
+    .tituloAplicar{
+        margin-top: 15rem;
+    }
+    
+}
+
 
 .multaEspecifica .carta {
     max-width: 23rem;
