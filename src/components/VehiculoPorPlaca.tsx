@@ -31,7 +31,7 @@ const VehiculoPorPlaca = () => {
       return;
     }
 
-    if (ElvehiculoPorPlaca == undefined) {
+    if (ElvehiculoPorPlaca === undefined) {
       setError({
         ...error,
         estatus: true,
@@ -56,8 +56,6 @@ const VehiculoPorPlaca = () => {
   const revertirEstado = () => {
     setEstado(true);
   };
-
-  console.log(placa);
 
   let ElvehiculoPorPlaca = Vehiculos.filter(
     (vehiculo) => vehiculo.placa === placa

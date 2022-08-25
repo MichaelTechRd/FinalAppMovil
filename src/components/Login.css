@@ -54,6 +54,11 @@
     margin-bottom: 1rem;
 }
 
+.mb-1-2{
+    margin-bottom: .5rem;
+}
+
+
 
 #alerta-error {
     background-color: #ef4444;

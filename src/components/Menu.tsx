@@ -105,7 +105,7 @@ const Menu: React.FC<ContainerProps> = ({ setLogeado }) => {
   return (
     <IonMenu contentId="main" type="overlay">
       <IonContent>
-        <IonList id="inbox-list" class="mb-1">
+        <IonList id="inbox-list" class="mb-1-2 border">
           <IonListHeader>App de Agentes</IonListHeader>
           <IonNote>-- Administra tus agentes --</IonNote>
           {appPages.map((appPage, index) => {
@@ -133,7 +133,7 @@ const Menu: React.FC<ContainerProps> = ({ setLogeado }) => {
         </IonList>
 
         <input
-          className="boton"
+          className="boton mt-2"
           type="submit"
           value={"Cerrar Sesion"}
           onClick={deslogearse}

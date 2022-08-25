@@ -1,0 +1,12 @@
+[
+    {
+        "id" : 1,
+        "foto" : "https://img.freepik.com/fotos-premium/retrato-sonriente-conductor-furgoneta_53419-6444.jpg?w=2000",
+        "nombre" : "Jorge",
+        "apellido" : "Caraballo",
+        "fechaDeNacimiento" : "24-1-1998",
+        "direccion" : "San Jose #2",
+        "telefono" : 8292077894,
+        "licencia" : "8888sa86"
+    }
+]

@@ -7,7 +7,7 @@ import {
   import { IonReactRouter } from "@ionic/react-router";
   import { Redirect, Route } from "react-router-dom";
   import Menu from "./components/Menu";
-  import Page from "./pages/TarifarioDeMultasPage";
+  import Page from "./pages/ConductorPorLicenciaPage";
   import Login from "./components/Login";
   import { Fragment, useState } from "react";
   
