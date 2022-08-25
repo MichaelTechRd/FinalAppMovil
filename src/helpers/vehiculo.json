@@ -1,0 +1,24 @@
+[
+    {
+        "id" : 1,
+        "modelo" : "Honda",
+        "Año" : 2020,
+        "placa" : "ASKTUTORIAL",
+        "Dueño" : "Radhames"
+    },
+    {
+        "id" : 2,
+        "modelo" : "toyota",
+        "Año" : 2025,
+        "placa" : "PRUEBA789",
+        "Dueño" : "pedro"
+    },
+    {
+        "id" : 3,
+        "modelo" : "Honda",
+        "Año" : 2020,
+        "placa" : "ELEMENTO-DSA",
+        "Dueño" : "Radhames"
+    }
+
+]
