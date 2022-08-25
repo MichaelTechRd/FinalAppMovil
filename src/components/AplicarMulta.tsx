@@ -66,11 +66,11 @@ const AplicarMulta = () => {
       longitud: "",
       fecha: "",
       hora: "",
-    })
+    });
   };
 
   //   console.log(multa);
-    console.log(multas);
+  console.log(multas);
 
   return (
     <div className="container">
@@ -189,28 +189,30 @@ const AplicarMulta = () => {
         </form>
       </div>
 
-      <table className="multa">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Cedula</th>
-            <th>Placa del vehiculo</th>
-            <th>motivo de la multa</th>
-            <th>Hora</th>
-          </tr>
-        </thead>
-        <tbody className="">
-          {multas.map((multa) => (
-            <tr key={multa.id}>
-              <td>{multa.id}</td>
-              <td>{multa.cedula}</td>
-              <td>{multa.cedula}</td>
-              <td>{multa.motivo}</td>
-              <td>{multa.hora}</td>
+      <div className="contenedor-tabla">
+        <table className="tabla">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Cedula</th>
+              <th>Placa del vehiculo</th>
+              <th>motivo de la multa</th>
+              <th>Hora</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody className="">
+            {multas.map((multa) => (
+              <tr key={multa.id}>
+                <td>{multa.id}</td>
+                <td>{multa.cedula}</td>
+                <td>{multa.cedula}</td>
+                <td>{multa.motivo}</td>
+                <td>{multa.hora}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

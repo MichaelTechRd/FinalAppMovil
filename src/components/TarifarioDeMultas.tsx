@@ -26,31 +26,32 @@ const TarifarioDeMultas = () => {
 
       {estado ? (
         <table className="multa">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Cedula</th>
-              <th>Placa del vehiculo</th>
-              <th>motivo de la multa</th>
-              <th>Hora</th>
-            </tr>
-          </thead>
-          <tbody className="">
-            {Multas.map((multa) => (
-              <tr
-                key={multa.id}
-                onClick={() => {
-                  mostrarUnaMultaEspecifica(multa.id);
-                }}
-              >
-                <td>{multa.id}</td>
-                <td>{multa.cedula}</td>
-                <td>{multa.cedula}</td>
-                <td>{multa.motivo}</td>
-                <td>{multa.hora}</td>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Cedula</th>
+                <th>Placa del vehiculo</th>
+                <th>motivo de la multa</th>
+                <th>Hora</th>
               </tr>
-            ))}
-          </tbody>
+            </thead>
+            <tbody className="">
+              {Multas.map((multa) => (
+                <tr
+                  key={multa.id}
+                  onClick={() => {
+                    mostrarUnaMultaEspecifica(multa.id);
+                  }}
+                >
+                  <td>{multa.id}</td>
+                  <td>{multa.cedula}</td>
+                  <td>{multa.cedula}</td>
+                  <td>{multa.motivo}</td>
+                  <td>{multa.hora}</td>
+                </tr>
+              ))}
+            </tbody>
+   
         </table>
       ) : (
         <div className="multaEspecifica">
@@ -61,10 +62,15 @@ const TarifarioDeMultas = () => {
             />
 
             <div className="contenidoCarta">
-              <p className=""> <strong className="subtitulo">multa causada por {laMulta?.motivo}
-              </strong> 
-
-              La persona con el numero de identidad {laMulta?.cedula}, fue multado la fecha {laMulta?.fecha}, en la hora {laMulta?.hora}, debido a {laMulta?.motivo}, en la latitud {laMulta?.latitud} y longitud {laMulta?.longitud}
+              <p className="">
+                {" "}
+                <strong className="subtitulo">
+                  multa causada por {laMulta?.motivo}
+                </strong>
+                La persona con el numero de identidad {laMulta?.cedula}, fue
+                multado la fecha {laMulta?.fecha}, en la hora {laMulta?.hora},
+                debido a {laMulta?.motivo}, en la latitud {laMulta?.latitud} y
+                longitud {laMulta?.longitud}
               </p>
               <button className="boton" onClick={revertirEstado}>
                 Volver

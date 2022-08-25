@@ -5,7 +5,10 @@
     border-spacing: 0;
     display: block;
     overflow: auto;
-    height: 18rem;
+    height: 20rem;
+    
+    
+
 }
 
 thead {
@@ -65,14 +68,6 @@ tbody td {
 @media (min-width: 414px)   {
     .titulo{
         margin-top: 15rem;
-
-    }
-    
-}
-
-@media (min-width: 820px)   {
-    .titulo{
-        margin-top: 0rem;
 
     }
     
