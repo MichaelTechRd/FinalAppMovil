@@ -12,6 +12,10 @@ import TarifarioDeMultasPage from "./pages/TarifarioDeMultasPage";
 import VehiculoPorPlacaPage from "./pages/VehiculoPorPlacaPage";
 import ConductorPorLicenciaPage from "./pages/ConductorPorLicenciaPage";
 import AplicarMultaPage from "./pages/AplicarMultaPage";
+import MapadeMultasPage from "./pages/MapadeMultasPage";
+import NoticiasPage from "./pages/NoticiasPage";
+import HoroscopoPage from "./pages/HoroscopoPage";
+
 import Login from "./components/Login";
 import { Fragment, useState } from "react";
 
@@ -67,8 +71,21 @@ const App: React.FC = () => {
                   <TarifarioDeMultasPage />
                 </Route>
 
+
                 <Route path="/" exact={true}>
                   <TarifarioDeMultasPage />
+                </Route>
+
+                <Route path="/page/Mapa" exact={true}>
+                  <MapadeMultasPage />
+                </Route>
+
+                <Route path="/page/Noticias" exact={true}>
+                  <NoticiasPage />
+                </Route>
+
+                <Route path="/page/Horoscopo" exact={true}>
+                  <HoroscopoPage />
                 </Route>
 
                 {/* <Route path="/page/:name" exact={true}>
