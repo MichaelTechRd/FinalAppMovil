@@ -66,7 +66,7 @@ const TarifarioDeMultas = () => {
                 <strong className="subtitulo">
                   multa causada por {laMulta?.motivo}
                 </strong>
-                La persona con el numero de identidad {laMulta?.cedula}, fue
+                La persona con el numero de identidad {laMulta?.cedula}, con la licencia 8888sa86 y con la placa del automovil ASKTUTORIAL , fue
                 multado la fecha {laMulta?.fecha}, en la hora {laMulta?.hora},
                 debido a {laMulta?.motivo}, en la latitud {laMulta?.latitud} y
                 longitud {laMulta?.longitud}
