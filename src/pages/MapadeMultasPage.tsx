@@ -10,7 +10,7 @@ import {
 import { useParams } from "react-router";
 import "./Page.css";
 import MapadeMultas from "../components/MapadeMultas";
-const Page: React.FC = () => {
+const MapadeMultasPage: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -34,4 +34,4 @@ const Page: React.FC = () => {
   );
 };
 
-export default Page;
+export default MapadeMultasPage;

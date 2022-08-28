@@ -89,7 +89,5 @@ const Login: React.FC<ContainerProps> = ({setLogeado}) => {
     </div>
   );
 };
-console.log(uuidv4());
-
 
 export default Login;

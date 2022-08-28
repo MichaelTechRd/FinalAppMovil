@@ -15,6 +15,7 @@ import AplicarMultaPage from "./pages/AplicarMultaPage";
 import MapadeMultasPage from "./pages/MapadeMultasPage";
 import NoticiasPage from "./pages/NoticiasPage";
 import HoroscopoPage from "./pages/HoroscopoPage";
+import ClimaPage from "./pages/ClimaPage";
 
 import Login from "./components/Login";
 import { Fragment, useState } from "react";
@@ -86,6 +87,10 @@ const App: React.FC = () => {
 
                 <Route path="/page/Horoscopo" exact={true}>
                   <HoroscopoPage />
+                </Route>
+
+                <Route path="/page/Clima" exact={true}>
+                  <ClimaPage />
                 </Route>
 
                 {/* <Route path="/page/:name" exact={true}>

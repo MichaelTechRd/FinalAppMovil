@@ -3,7 +3,7 @@ import "./MapadeMultas.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import Multas from "../helpers/multas.json";
 
-const MapadeMultas: React.FC = () => {
+const Clima: React.FC = () => {
 
   return (
     <div className="container">
@@ -23,25 +23,25 @@ const MapadeMultas: React.FC = () => {
 
         <Marker position={[18.4838, -69.8896]}>
           <Popup>
-          Exceso de velocidad
+            Soleado
           </Popup>
         </Marker>
 
         <Marker position={[18.4835, -69.9393]}>
           <Popup>
-          Exceso de velocidad
+            Soleado
           </Popup>
         </Marker>
 
         <Marker position={[18.4829, -69.9117]}>
           <Popup>
-            Choque automovilistico
+            Nublado
           </Popup>
         </Marker>
 
         <Marker position={[18.4727, -69.941]}>
           <Popup>
-            Exceso de velocidad
+            Precipitacion de lluvia
           </Popup>
         </Marker>
       </MapContainer>
@@ -49,4 +49,4 @@ const MapadeMultas: React.FC = () => {
   );
 };
 
-export default MapadeMultas;
+export default Clima;
